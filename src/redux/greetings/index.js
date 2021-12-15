@@ -1,4 +1,4 @@
-/* eslint-disable quotes, jsx-quotes, no-debugger */
+/* eslint-disable quotes */
 
 import getRandomMessage from "../api";
 
@@ -21,7 +21,6 @@ export const hideLoading = () => ({
 
 export const randomGreeting = () => async (dispatch) => {
   dispatch(showLoading());
-  // debugger;
   const data = await getRandomMessage();
   dispatch(getRandomGreeting(data));
   dispatch(hideLoading());
