@@ -1,10 +1,8 @@
-/* eslint-disable quotes */
+import getRandomMessage from '../api';
 
-import getRandomMessage from "../api";
-
-const GET_RANDOM_GREETING = "greetings/random";
-const SHOW_LOADING = "greetings/showLoading";
-const HIDE_LOADING = "greetings/hideLoading";
+const GET_RANDOM_GREETING = 'greetings/random';
+const SHOW_LOADING = 'greetings/showLoading';
+const HIDE_LOADING = 'greetings/hideLoading';
 
 export const getRandomGreeting = (payload) => ({
   type: GET_RANDOM_GREETING,
