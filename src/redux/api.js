@@ -1,14 +1,9 @@
-/* eslint-disable quotes, jsx-quotes, no-debugger */
+/* eslint-disable quotes, jsx-quotes */
 
-// debugger;
 const getRandomMessage = async () => {
-  const response = await fetch("httpsfrozen-inlet-25239.herokuapp.com").then(
-    (res) => {
-      console.log(res);
-      res.json();
-    },
-  );
-  return response;
+  const response = await fetch("https://frozen-inlet-25239.herokuapp.com/");
+
+  return response.json();
 };
 
 export default getRandomMessage;
